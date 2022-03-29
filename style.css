@@ -44,3 +44,13 @@ body{
 .btns-confirm{
   margin-top: 50px;
 }
+
+.confirm-msgs{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.click-me{
+  margin: 50px 0 50px 50px;
+}
