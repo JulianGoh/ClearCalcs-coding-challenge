@@ -18,35 +18,25 @@ const openModal = function (text) {
 const closeModal = function(text){
   overlay.classList.add("hidden");
   modal.style.display = "none";
-  confirmMsg.insertAdjacentHTML("beforeend", `<p> ${text} </p>`);
+  return text;
 }
+
+const writeMsg = function(text){
+  confirmMsg.insertAdjacentHTML("beforeend", `<p> ${text} </p>`);
+};
 
 clickMe.addEventListener("click", function () {
   openModal(clickMe.dataset.heading);
 });
 
 clickYes.addEventListener("click", function () {
-  closeModal(clickYes.dataset.heading);
+  writeMsg(closeModal(clickYes.dataset.heading));
 });
 
 clickCancel.addEventListener("click", function () {
-  closeModal(clickCancel.dataset.heading);
+  writeMsg(closeModal(clickCancel.dataset.heading));
 });
 
 
 
-/*
-class View {
-  constructor() {}
 
-  openModal = (text) => {};
-}
-
-class Controller {
-  constructor(view) {
-    this.view = view;
-  }
-}
-
-const app = new Controller(new View());
-*/
