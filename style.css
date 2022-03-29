@@ -1,35 +1,35 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   position: relative;
   height: 100vh;
 }
 
-.btn{
+.btn {
   padding: 2px 5px;
 }
 
-.overlay{
+.overlay {
   position: absolute;
-  top:0;
-  left:0;
-  background-color: rgb(0,0,0,0.5);
-  width:100%;
-  height:100%
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   /* z-index: 6; */
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.modal-window{
+.modal-window {
   height: 300px;
   width: 500px;
-  background-color: #FFF;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,16 +41,16 @@ body{
   justify-content: center;
 }
 
-.btns-confirm{
+.btns-confirm {
   margin-top: 50px;
 }
 
-.confirm-msgs{
+.confirm-msgs {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
 }
 
-.click-me{
+.click-me {
   margin: 50px 0 50px 50px;
 }
